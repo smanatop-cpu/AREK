@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AREK Quiz - Seberapa Kenal Kamu dengan Jember?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="arek_quiz_style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-card">
+            <div class="logo">🌄</div>
+            <h1>AREK Quiz</h1>
+            <p class="subtitle">Are You Arek Jember Enough?</p>
+            <p class="description">
+                Uji pengetahuanmu tentang kota Jember! 
+                Dari kuliner, wisata, hingga budaya lokal. 
+                Ada 5 soal menanti! 🎯
+            </p>
+            <div class="quiz-info">
+                <div class="info-item">
+                    <span class="icon">📝</span>
+                    <span>5 Pertanyaan</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">⏱️</span>
+                    <span>~2 Menit</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon">🏆</span>
+                    <span>Skor Maksimal 100</span>
+                </div>
+            </div>
+            <button class="btn-start" onclick="startQuiz()">Mulai Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        // Reset skor saat mulai quiz baru
+        function startQuiz() {
+            localStorage.setItem('quizScore', '0');
+            window.location.href = 'quiz1.html';
+        }
+    </script>
+</body>
+</html>
